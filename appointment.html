@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dexery&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="time"],
+        select,
+        textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .pet-details {
+            display: none;
+            padding-left: 20px;
+            border-left: 2px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .pet-details label {
+            margin-bottom: 3px;
+        }
+        #cat-details,
+        #dog-details {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font fixed w-full bg-white z-10">
+        <div class="container mx-auto flex flex-wrap p-5 items-center">
+            <div class="mx-auto flex items-center">
+                <img src="/imagesmain/logoimages/logo.jpg" class="w-20 h-20 text-white p-2 bg-purple-500 rounded-full"
+                    alt="Logo">
+                <h1 class="text-4xl text-gray-900 font-semibold ml-4" style="color: aliceblue; font-family: 'Dexery', sans-serif;">PAWSITIVE-X</h1>
+            </div>
+        </div>
+    </header>
+    <form action="get">
+        <label for="nm">Name:</label>
+        <input type="text" id="nm" name="name" required>
+
+        <label for="contact">Phone No:</label>
+        <input type="text" id="cc" name="contact" required>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="city">Location:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="pet">Pet Type:</label>
+        <select name="pet" id="pet" onchange="showPetDetails()" required>
+            <option value="" disabled selected>Select Pet Type</option>
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+        </select>
+
+        <div class="pet-details" id="cat-details">
+            <label for="catnm">Cat Name:</label>
+            <input type="text" id="catnm" name="catnm">
+
+            <label for="catbreed">Cat Breed:</label>
+            <input type="text" id="catbreed" name="catbreed">
+        </div>
+
+        <div class="pet-details" id="dog-details">
+            <label for="dognm">Dog Name:</label>
+            <input type="text" id="dognm" name="dognm">
+
+            <label for="dogbreed">Dog Breed:</label>
+            <input type="text" id="dogbreed" name="dogbreed">
+        </div>
+
+        <label for="meeting-time">Choose a time for your meeting:</label>
+        <input type="time" id="meeting-time" name="meeting-time" required>
+
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="Symtoms">Symptoms:</label>
+        <textarea name="Symtoms" id="Symtoms" cols="30" rows="7"></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function showPetDetails() {
+            var petType = document.getElementById("pet").value;
+            var catDetails = document.getElementById("cat-details");
+            var dogDetails = document.getElementById("dog-details");
+
+            if (petType === "Cat") {
+                catDetails.style.display = "block";
+                dogDetails.style.display = "none";
+            } else if (petType === "Dog") {
+                catDetails.style.display = "none";
+                dogDetails.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

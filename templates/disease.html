@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dexery&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            color: #000000; /* Black text color */
+            font-family: 'Dexery', sans-serif; /* Changed font */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2em; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px; /* Adjust the width as needed */
+            margin: 20px auto;
+            position: relative; /* Position relative for loading bar positioning */
+        }
+
+        input,
+        select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button */
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Loading animation */
+        .loader-container {
+            display: none; /* Initially hidden */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+            border-radius: 10px;
+        }
+
+        .loader-bar {
+            width: 0;
+            height: 10px;
+            background-color: #3498db; /* Blue color for loading bar */
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 2s ease; /* Adjust the duration of the loading bar */
+        }
+
+        .loading input[type="submit"] {
+            color: transparent; /* Hide text during loading */
+        }
+
+        .loading .loader-container {
+            display: block; /* Show loader during loading */
+        }
+    </style>
+    <title>Pet Disease Prediction</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- <header class="text-gray-600 body-font fixed w-full bg-white z-10">
+        <div class="container mx-auto flex flex-wrap p-5 items-center">
+            <div class="mx-auto flex items-center">
+                <img src="/imagesmain/logoimages/logo.jpg"
+                    class="w-20 h-20 text-white p-2 bg-purple-500 rounded-full" alt="Logo">
+                <h1 class="text-4xl text-gray-900 font-semibold ml-4"
+                    style="color: aliceblue; font-family: 'Dexery', sans-serif;">PAWSITIVE-X</h1>
+            </div>
+        </div>
+    </header> -->
+
+    <div class="container mx-auto mt-20">
+        <h1 class="text-3xl font-bold text-gray-800">Pet Disease Prediction</h1>
+        <form id="predictionForm" action="/predict" method="post" onsubmit="showLoader()"
+            class="mt-8 bg-white rounded-lg shadow-md p-8 max-w-md mx-auto">
+            <!-- Input fields for user data -->
+            <div class="mb-4">
+                <label for="age" class="block text-gray-700 font-bold mb-2">Age:</label>
+                <input type="number" id="age" name="age" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="change_b" class="block text-gray-700 font-bold mb-2">Change in Behavior:</label>
+                <select id="change_b" name="change_b" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="reluctance_to_move" class="block text-gray-700 font-bold mb-2">Reluctance to Move:</label>
+                <select id="reluctance_to_move" name="reluctance_to_move" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <!-- Add other input fields -->
+            <div class="mb-4">
+                <label for="reduce_activity" class="block text-gray-700 font-bold mb-2">Reduction in Activity:</label>
+                <select id="reduce_activity" name="reduce_activity" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="stiffness" class="block text-gray-700 font-bold mb-2">Stiffness:</label>
+                <select id="stiffness" name="stiffness" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="sneezing" class="block text-gray-700 font-bold mb-2">Sneezing:</label>
+                <select id="sneezing" name="sneezing" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="vomiting" class="block text-gray-700 font-bold mb-2">Vomiting:</label>
+                <select id="vomiting" name="vomiting" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="limping" class="block text-gray-700 font-bold mb-2">Limping:</label>
+                <select id="limping" name="limping" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="aggression" class="block text-gray-700 font-bold mb-2">Aggression:</label>
+                <select id="aggression" name="aggression" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="anxiety" class="block text-gray-700 font-bold mb-2">Anxiety:</label>
+                <select id="anxiety" name="anxiety" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="compulsive_behavior" class="block text-gray-700 font-bold mb-2">Compulsive Behavior:</label>
+                <select id="compulsive_behavior" name="compulsive_behavior" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="elimination" class="block text-gray-700 font-bold mb-2">Elimination Issues:</label>
+                <select id="elimination" name="elimination" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="species" class="block text-gray-700 font-bold mb-2">Species:</label>
+                <select id="species" name="species" required
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                </select>
+            </div>
+
+            <div class="loader-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+
+            <input type="submit" value="Predict"
+                class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        </form>
+    </div>
+
+    <script>
+        function showLoader(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var form = document.getElementById('predictionForm');
+            var loaderBar = document.getElementById('loaderBar');
+
+            form.classList.add('loading');
+            loaderBar.style.width = '100%'; // Set loading bar to 100% width
+
+            // Simulate a delay for the loading animation (adjust as needed)
+            setTimeout(function () {
+                // After the loading animation, submit the form programmatically
+                form.submit();
+            }, 2000); // 2000 milliseconds (2 seconds) as an example, adjust as needed
+        }
+    </script>       
+</body>
+
+</html>

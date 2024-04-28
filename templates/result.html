@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction Result</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c383ff, #ffffff); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  h1 {
+    color: #4b0082; /* Dark purple */
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+  }
+
+  .disease {
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    color: #6a5acd; /* Slate blue */
+    margin-top: 20px;
+  }
+
+  p {
+    color: #333; /* Dark gray */
+    font-size: 18px; /* Increased font size */
+    margin-top: 15px; /* Increased margin */
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Prediction Result</h1>
+  <p class="disease">Predicted Disease: {{ predicted_disease }} </p>
+  <p>Your detailed prediction information can go here.</p>
+  <p class="footer">Powered by PAWASITIVE-X</p>
+</div>
+
+</body>
+</html>

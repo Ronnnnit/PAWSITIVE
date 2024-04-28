@@ -1,0 +1,237 @@
+Species,Age,Change_b,Reluctance_to_move,Reduce_activity,Stiffness,Sneezing,Vomiting,Limping,Aggression,Anxiety,Compulsive_behaviour,Elimination,Disease
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthiritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,disease
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Allergic reaction
+Cat,19,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,19,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,2,0,0,0,0,0,1,0,1,0,0,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,0,1,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Diabetes
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,Respiratory infection
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,Respiratory infection
+Dog,1,1,0,1,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Digestive disorder
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Kidney disease
+Dog,3,0,0,1,1,1,1,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,Anxiety
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Digestive disorder
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Musculoskeletal disorder
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Musculoskeletal disorder
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,2,1,0,1,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,5,0,1,0,1,0,0,0,0,1,1,1,Arthritis
+Dog,7,1,0,1,0,0,0,0,0,1,1,0,No disease
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,No disease
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Respiratory infection
+Cat,12,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,17,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,2,0,0,0,0,0,1,0,1,0,0,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,0,1,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Digestive disorder
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,No disease
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,1,1,0,1,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Arthritis
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Digestive disorder
+Dog,3,0,0,1,1,1,0,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,No disease
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Arthritis
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Arthritis
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Arthritis
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthiritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,No disease
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Allergic reaction
+Cat,19,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,19,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,2,0,0,0,0,0,1,0,1,0,0,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,0,1,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Diabetes
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,Respiratory infection
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,Respiratory infection
+Dog,1,1,0,1,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Digestive disorder
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Kidney disease
+Dog,3,0,0,1,1,1,0,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,Anxiety
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Digestive disorder
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Musculoskeletal disorder
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Musculoskeletal disorder
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,2,1,0,1,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,5,0,1,0,1,0,0,0,0,1,1,1,Arthritis
+Dog,7,1,0,1,0,0,0,0,0,1,1,0,No disease
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,No disease
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Respiratory infection
+Cat,12,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,17,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,2,0,0,0,0,0,1,0,1,0,0,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,1,0,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Digestive disorder
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,No disease
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,1,1,1,0,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Arthritis
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Digestive disorder
+Dog,3,0,0,1,1,1,0,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,No disease
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Arthritis
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Arthritis
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Arthritis
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,0,1,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Digestive disorder
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,No disease
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,1,1,0,1,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Arthritis
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Digestive disorder
+Dog,3,0,0,1,1,1,0,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,No disease
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Arthritis
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Arthritis
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Arthritis
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthiritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,No disease
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Allergic reaction
+Cat,19,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,19,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,2,0,0,0,0,0,1,0,1,0,0,0,Digestive disorder
+Dog,1,0,0,0,0,1,0,0,0,0,0,0,No disease
+Dog,2,1,0,0,0,0,1,0,0,0,0,0,Digestive disorder
+Cat,2,1,0,1,0,0,0,0,0,0,0,0,No disease
+Dog,1,1,0,0,1,0,0,0,0,0,0,0,Arthritis
+Dog,1,0,0,0,0,1,1,0,0,0,1,0,Diabetes
+Dog,10,0,0,0,0,1,1,0,0,1,1,1,Allergies
+Dog,1,1,0,0,1,0,0,0,1,0,0,0,Arthritis
+Cat,5,1,0,1,0,0,1,0,1,1,1,0,Digestive disorder
+Dog,1,0,0,1,0,0,0,0,1,1,0,0,No disease
+Dog,6,1,1,1,1,1,1,1,1,1,1,1,Kidney disease
+Dog,7,0,0,1,0,0,0,0,0,0,0,1,No disease
+Dog,2,1,0,0,0,1,0,0,1,0,0,1,Respiratory infection
+Cat,7,1,0,1,0,0,0,0,0,0,0,0,Respiratory infection
+Cat,2,0,0,0,0,1,0,0,0,0,0,0,Respiratory infection
+Dog,1,1,0,1,0,0,0,0,1,0,0,0,No disease
+Cat,5,1,1,0,0,0,0,0,0,0,0,1,Digestive disorder
+Dog,6,1,0,0,1,0,1,1,1,1,1,1,Kidney disease
+Dog,3,0,0,1,1,1,0,0,0,1,1,0,Respiratory infection
+Cat,3,0,0,1,0,0,0,0,0,0,1,0,Anxiety
+Cat,5,1,0,1,0,0,0,0,0,1,1,1,Digestive disorder
+Cat,5,1,0,0,0,0,0,1,1,1,1,1,Musculoskeletal disorder
+Dog,7,0,1,0,1,0,0,0,1,0,0,1,Arthritis
+Dog,9,1,0,1,0,0,1,0,1,0,1,1,Digestive disorder
+Dog,7,1,0,0,1,0,0,0,1,0,1,0,Arthritis
+Dog,7,0,1,0,0,0,1,0,1,1,1,1,Digestive disorder
+Cat,8,1,1,1,0,0,0,0,0,0,1,1,Arthritis
+Cat,3,1,0,0,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,4,0,0,0,0,0,1,1,1,1,1,0,Digestive disorder
+Cat,4,1,0,0,0,0,0,1,0,0,0,1,Musculoskeletal disorder
+Cat,6,0,0,0,1,0,1,0,1,1,1,0,Digestive disorder
+Dog,2,1,0,1,1,1,0,0,1,1,1,1,Respiratory infection
+Cat,5,0,1,0,1,0,0,0,0,1,1,1,Arthritis
+Dog,7,1,0,1,0,0,0,0,0,1,1,0,No disease
+Dog,3,1,1,1,0,0,0,0,0,1,0,1,Arthritis
+Dog,4,0,0,1,0,0,0,0,1,0,0,0,No disease
+Dog,4,1,0,0,1,1,0,0,1,0,0,0,Respiratory infection
+Dog,9,0,1,1,0,0,0,0,0,0,0,0,Arthritis
+Dog,3,1,1,1,0,1,0,0,1,0,0,0,Respiratory infection
+Cat,12,1,0,0,0,0,1,0,1,1,1,1,Digestive disorder
+Dog,17,1,1,1,1,1,1,1,1,1,1,1,Kidney disease

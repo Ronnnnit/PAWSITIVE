@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            color: #555;
+        }
+
+        .buy-now-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .quantity-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PAWSITIVE X</h1>
+    <h1>Welcome to Your E-commerce Store</h1>
+    
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images\pawsitive-x.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        
+        <!-- Additional product cards with quantity selectors -->
+        <div class="product-card">
+            <img src="images\pawsitive-x2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Dog Collar and Leash Set Puppy Printed with Bell, Adjustable Nylon Collar</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images\pawsitive-x3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Description of Product 3</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Add more product cards here -->
+        <div class="product-card">
+            <img src="images\image.png" alt="Product 4">
+            <h2>Product 4</h2>
+            <p>Dog Plastic Muzzle</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\image2.png" alt="Product 5">
+            <h2>Product 5</h2>
+            <p>Description of Product 5</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\image3.png" alt="Product 6">
+            <h2>Product 6</h2>
+            <p>Description of Product 6</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\image4.png" alt="Product 7">
+            <h2>Product 7</h2>
+            <p>Description of Product 7</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\image5.png" alt="Product 8">
+            <h2>Product 8</h2>
+            <p>Description of Product 8</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\image6.png" alt="Product 9">
+            <h2>Product 9</h2>
+            <p>Description of Product 9</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.quantity-selector').forEach(selector => {
+        const quantityDisplay = selector.querySelector('.quantity');
+        const minusBtn = selector.querySelector('.minus-btn');
+        const plusBtn = selector.querySelector('.plus-btn');
+
+        let quantity = 1; // Initial quantity
+
+        // Decrease quantity
+        minusBtn.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                quantityDisplay.textContent = quantity;
+            }
+        });
+
+        // Increase quantity
+        plusBtn.addEventListener('click', () => {
+            quantity++;
+            quantityDisplay.textContent = quantity;
+        });
+    });
+</script>
+
+</body>
+</html>

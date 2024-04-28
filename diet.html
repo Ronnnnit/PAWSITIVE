@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSITIVE DIET</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dexery&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left-section,
+        .right-section {
+            width: 45%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .left-section:hover,
+        .right-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Style to make text between ** symbols bold */
+        p b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font fixed w-full bg-white z-10">
+        <div class="container mx-auto flex flex-wrap p-5 items-center">
+            <div class="mx-auto flex items-center">
+                <img src="/imagesmain/logoimages/logo.jpg" class="w-20 h-20 text-white p-2 bg-purple-500 rounded-full"
+                    alt="Logo">
+                <h1 class="text-4xl text-gray-900 font-semibold ml-4" style="color: aliceblue; font-family: 'Dexery', sans-serif;">PAWSITIVE-X</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <h2>Dog Diet</h2>
+            <img src="https://th.bing.com/th/id/OIP.8amkcxCP5S_ElaU0-8cuOAHaE8?rs=1&pid=ImgDetMain" alt="Dog Image">
+            <p>
+                <b>Labrador Retriever:</b> Feed a diet suitable for large breeds, focusing on lean proteins and moderate portions to avoid obesity.<br>
+                <b>Golden Retriever:</b> Offer a balanced diet with fresh fruits and vegetables as treats, while monitoring calorie intake to prevent obesity.<br>
+                <b>German Shepherd:</b> Provide easily digestible proteins and supplements for joint health, with controlled portions to prevent digestive issues.<br>
+                <b>Indian Pariah Dog:</b> Feed a diet for medium-sized breeds, incorporating varied protein sources and monitoring portions to prevent obesity.<br>
+                <b>Pomeranian:</b> Offer small, frequent meals of high-quality food for small breeds, with dental chews for oral health.
+            </p>
+        </div>
+        <div class="right-section">
+            <h2>Cat Diet</h2>
+            <img src="https://th.bing.com/th/id/OIP.mq00TDIQi5x8HFTlijuQ4wAAAA?rs=1&pid=ImgDetMain" alt="Cat Image">
+            <p>
+                <b>Persian Cat:</b> Feed a diet tailored for hairball control and skin health, ensuring hydration with wet food or water-added dry food.<br>
+                <b>Siamese Cat:</b> Provide a protein-rich diet to support their high energy levels, with interactive feeding toys for mental stimulation.<br>
+                <b>Maine Coon Cat:</b> Offer a diet formulated for large breeds, rich in protein and essential fatty acids, with supplements for overall health and mobility.<br>
+                <b>Indian Shorthair Cat:</b> Feed a balanced diet with varied protein sources, monitoring portions to prevent weight issues.<br>
+                <b>Bengal Cat:</b> Opt for a protein-rich diet to match their active lifestyle, supplemented with interactive toys for mental stimulation.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

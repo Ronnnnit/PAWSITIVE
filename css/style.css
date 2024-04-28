@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #8A2BE2, #800080); /* Gradient purple background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; /* Adjusted padding */
+    height: 70px; /* Adjusted height */
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content {
+	margin: 50px;
+}
+
+.logout-btn {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.logout-btn a {
+	color: #333;
+	background-color: #ccc;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+	background-color: #666;
+}
+.login-btn {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.Register-btn a,
+.login-btn a {
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.login-btn {
+		margin: 20px 0;
+	}
+
+	.login-btn a {
+		padding: 8px 16px;
+	}
+}
+
+.logout-btn {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.logout-btn a {
+	color: #333;
+	background-color: #ccc;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	.logout-btn {
+		margin: 20px 0;
+	}
+
+	.logout-btn a {
+		padding: 8px 16px;
+	}
+}
+/* Navigation Menu Styles */
+.nav-link {
+	padding: 15px 20px;
+	margin: 0 10px;
+	background-color: rgb(198, 67, 198);
+	color: white;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+	background-color: #7e57c2; /* Lighter shade of purple */
+	transform: scale(1.05);
+  }
+  
+  /* Header Button Styles */
+  header button:hover {
+	background-color: #7e57c2; /* Lighter shade of purple */
+  }
+  
+  /* Header Logo Styles */
+  header img {
+	width: 80px;
+	height: 80px;
+  }
+  

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSITIVE - First Aid</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dexery&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <style>
+      .card {
+          transition: all 0.3s ease;
+      }
+      .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .popup-container {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+      }
+      .popup-content {
+          position: relative;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 80%;
+          margin: 20px auto;
+      }
+  </style>
+</head>
+<body>
+  <header class="text-gray-600 body-font fixed w-full bg-white z-10">
+    <div class="container mx-auto flex flex-wrap p-5 items-center">
+        <div class="mx-auto flex items-center">
+            <img src="/imagesmain/logoimages/logo.jpg" class="w-20 h-20 text-white p-2 bg-purple-500 rounded-full"
+                alt="Logo">
+            <h1 class="text-4xl text-gray-900 font-semibold ml-4" style="color: aliceblue; font-family: 'Dexery', sans-serif;">PAWSITIVE-X</h1>
+        </div>
+    </div>
+</header>
+
+<hr>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">First Aid for Pets</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Learn how to administer first aid to your pet in case of emergencies.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+          <!-- Fractures -->
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-10 rounded-lg card">
+                  <img class="h-32 rounded mb-6" src="/images/first_aidpic/fracture.png" alt="Fractures">
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fractures</h2>
+                  <p class="leading-relaxed text-base">Learn how to identify and stabilize fractures in your pet.</p>
+                  <!-- Add button to trigger popup -->
+                  <button onclick="togglePopup('popup1')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+              </div>
+          </div>
+            <!-- Injuries -->
+<div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/injury.png" alt="Injuries">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Injuries</h2>
+    <p class="leading-relaxed text-base">Administer first aid to your pet in case of injuries.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup2')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+
+ <!-- Heatstroke -->
+ <div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/heat.png" alt="Heatstroke">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Heatstroke</h2>
+    <p class="leading-relaxed text-base">Know the signs and how to treat heatstroke in your pet.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup3')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+
+
+      <!-- Poisoning -->
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-10 rounded-lg card">
+          <img class="h-32 rounded mb-6" src="/images/first_aidpic/poison.png" alt="Poisoning">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Poisoning</h2>
+          <p class="leading-relaxed text-base">What to do if your pet ingests a toxic substance.</p>
+          <!-- Add button to trigger popup -->
+          <button onclick="togglePopup('popup4')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+        </div>
+      </div>
+      
+      <!-- Burns -->
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-10 rounded-lg card">
+          <img class="h-32 rounded mb-6" src="/images/first_aidpic/fire.png" alt="Burns">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Burns</h2>
+          <p class="leading-relaxed text-base">Administer first aid for burns to your pet.</p>
+          <!-- Add button to trigger popup -->
+          <button onclick="togglePopup('popup7')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+        </div>
+      </div>
+ <!-- Seizures -->
+ <div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/elec.png" alt="Seizures">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Seizures</h2>
+    <p class="leading-relaxed text-base">How to handle seizures in pets.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup8')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+
+<!-- Eye Injuries -->
+<div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/eyes.png" alt="Eye Injuries">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Eye Injuries</h2>
+    <p class="leading-relaxed text-base">Administer first aid for eye injuries in your pet.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup9')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+ <!-- Bee or Wasp Stings -->
+ <div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/bee.png" alt="Bee or Wasp Stings">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bee or Wasp Stings</h2>
+    <p class="leading-relaxed text-base">How to treat bee or wasp stings on your pet.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup10')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+
+<!-- Bleeding -->
+<div class="xl:w-1/3 md:w-1/2 p-4">
+  <div class="bg-gray-100 p-10 rounded-lg card">
+    <img class="h-32 rounded mb-6" src="/images/first_aidpic/blood.png" alt="Bleeding">
+    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Pawsitive-X</h3>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bleeding</h2>
+    <p class="leading-relaxed text-base">How to treat bleeding on your pet.</p>
+    <!-- Add button to trigger popup -->
+    <button onclick="togglePopup('popup11')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4">View</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+          <!-- Popup container -->
+          <div id="popup1" class="popup-container" onclick="closePopup('popup1')">
+              <div class="popup-content">
+                  <!-- Close button -->
+                  <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fractures</h2>
+                  <p class="leading-relaxed text-base">If your dog or cat sustains a fracture, it's crucial to approach the situation calmly and with care. Begin by muzzling your pet to prevent accidental bites, especially if they're in pain or frightened. Gently examine the injured limb, looking for signs of swelling, deformity, or an abnormal angle. If the fracture is open, cover the wound with a clean cloth to minimize infection risk. Next, stabilize the limb by splinting it with a rigid material, such as a board or rolled-up newspaper, ensuring the splint extends beyond the joints above and below the fracture. Use bandages to secure the splint in place, but avoid wrapping them too tightly. Finally, transport your pet to the veterinarian immediately for professional assessment and treatment. Remember, handling an injured pet requires caution, so if uncertain, seek veterinary assistance promptly.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      if (popup.style.display === "block") {
+          closePopup(popupId);
+      } else {
+          showPopup(popupId);
+      }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "block"; // Change 'none' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+      var popups = document.querySelectorAll('.popup-container');
+      popups.forEach(function(popup) {
+          if (event.target === popup) {
+              popup.style.display = "none";
+          }
+      });
+  });
+</script>
+
+
+      
+   
+
+<!-- Popup container -->
+<div id="popup2" class="popup-container" onclick="closePopup('popup2')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Injuries</h2>
+    <p class="leading-relaxed text-base">In the event of an injury to your dog or cat, immediate first aid can make a significant difference before professional veterinary care is obtained. Start by ensuring your safety and approach the injured pet calmly to avoid causing additional stress. If there is bleeding, apply gentle pressure with a clean cloth or bandage to control it. For cuts or wounds, clean the area with mild antiseptic solution or plain water and cover it with a sterile dressing. In case of a fracture, minimize movement and support the injured limb with a makeshift splint if possible. Always contact your veterinarian for guidance and transport the pet to the clinic safely. Remember, quick and calm action can help alleviate pain and prevent further complications in your beloved furry friend.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+
+      
+     
+      
+      <!-- Popup container -->
+      <div id="popup3" class="popup-container" onclick="closePopup('popup3')">
+        <div class="popup-content">
+          <!-- Close button -->
+          <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Heatstroke</h2>
+          <p class="leading-relaxed text-base">If you suspect your dog or cat is experiencing heatstroke, it's crucial to act swiftly. Move the pet to a cool, shaded area immediately. Wet their fur with cool (not cold) water and use a fan if available to enhance evaporation. Offer small sips of water, but avoid forcing them to drink. Applying cool compresses to their paws and ears can also help regulate their body temperature. It's essential to avoid using ice-cold water, as this can constrict blood vessels and hinder the cooling process. Contact your veterinarian promptly for further guidance, as heatstroke can be life-threatening if not addressed promptly</p>
+        </div>
+      </div>
+      <script>
+        // Function to display or hide popup based on its current state
+        function togglePopup(popupId) {
+          var popup = document.getElementById(popupId);
+          if (popup.style.display === "flex") {
+            closePopup(popupId);
+          } else {
+            showPopup(popupId);
+          }
+        }
+      
+        // Function to display popup
+        function showPopup(popupId) {
+          var popup = document.getElementById(popupId);
+          popup.style.display = "flex"; // Change 'hidden' to 'flex' to show the popup
+      
+          // Add event listener to close popup when clicking outside of it
+          document.addEventListener("click", clickOutsideHandler);
+        }
+      
+        // Function to close popup
+        function closePopup(popupId) {
+          var popup = document.getElementById(popupId);
+          popup.style.display = "hidden"; // Hide the popup
+      
+          // Remove event listener
+          document.removeEventListener("click", clickOutsideHandler);
+        }
+      
+        // Event listener function to close popup when clicking outside of it
+        function clickOutsideHandler(event) {
+          var popup = document.getElementById('popup3');
+          if (!popup.contains(event.target)) {
+            closePopup('popup3');
+          }
+        }
+      </script>
+      
+
+
+
+
+
+<!-- Popup container -->
+<div id="popup4" class="popup-container" onclick="closePopup('popup4')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Poisoning</h2>
+    <p class="leading-relaxed text-base">If you suspect your dog or cat has been poisoned, it is crucial to seek immediate veterinary attention. Do not attempt to induce vomiting without consulting a veterinarian, as some toxins can cause more harm when brought back up. Instead, gather any available information about the substance ingested and contact your vet or a poison control hotline. Keep your pet calm and monitor their breathing and vital signs while transporting them to the vet. Quick action can be lifesaving, so do not hesitate to seek professional help for proper diagnosis and treatment.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+
+<!-- Popup container -->
+<div id="popup7" class="popup-container" onclick="closePopup('popup7')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Burns</h2>
+    <p class="leading-relaxed text-base">If your dog or cat sustains a burn, immediate first aid is crucial for minimizing further damage and promoting healing. Start by gently flushing the affected area with cool (not cold) water for about 5-10 minutes to remove heat and reduce pain. Avoid using ice or very cold water, as it may worsen the injury. After flushing, cover the burn with a clean, non-stick bandage or sterile dressing. Refrain from using adhesive bandages directly on the fur. If the burn is severe or covers a large area, seek veterinary attention promptly. Do not apply ointments or creams without consulting a vet, as some substances may be harmful to pets. Monitoring your pet for signs of shock, such as pale gums or rapid breathing, is also essential, and immediate veterinary care is necessary if such symptoms arise.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+
+
+      
+    
+
+<!-- Popup container -->
+<div id="popup8" class="popup-container" onclick="closePopup('popup8')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Seizures</h2>
+    <p class="leading-relaxed text-base">If your dog or cat is experiencing a seizure, it's crucial to stay calm and prioritize their safety. Keep a timer to track the duration of the seizure. Clear the immediate area of any sharp objects or potential hazards to prevent injury. Avoid touching the pet during the seizure, as they may unknowingly bite in confusion. Create a quiet and dimly lit environment to reduce stimuli. Once the seizure subsides, comfort your pet and keep them warm. If the seizure lasts for more than five minutes or if multiple seizures occur in a short time, seek immediate veterinary attention. Note the details of the seizure, such as duration and symptoms, to provide helpful information to the veterinarian.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+ 
+
+<!-- Popup container -->
+<div id="popup9" class="popup-container" onclick="closePopup('popup9')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Eye Injuries</h2>
+    <p class="leading-relaxed text-base">In the event of an eye injury in a dog or cat, it's crucial to handle the situation with care and seek veterinary attention promptly. Avoid touching the injured eye directly and refrain from applying any medications without professional guidance. If there's debris in the eye, resist the urge to remove it yourself, as you might unintentionally cause further harm. Instead, gently and loosely place a clean, damp cloth over the eye to protect it and prevent additional irritation. Transport your pet to the vet immediately for a thorough examination and appropriate treatment. Timely intervention is essential in safeguarding your pet's vision and preventing potential</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+  
+<!-- Popup container -->
+<div id="popup10" class="popup-container" onclick="closePopup('popup10')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bee or Wasp Stings</h2>
+    <p class="leading-relaxed text-base">If your dog or cat has been stung by a bee or wasp, it's important to act quickly to alleviate their discomfort. First, try to locate and remove the stinger using tweezers or the edge of a credit card, being careful not to squeeze the venom sac. Clean the area with mild soap and water. Applying a mixture of baking soda and water or a paste made from meat tenderizer and water can help neutralize the venom and reduce swelling. You can also apply a cold compress to minimize pain and inflammation. Keep a close eye on your pet for signs of an allergic reaction, such as difficulty breathing or excessive swelling, and seek immediate veterinary attention if these symptoms occur. Additionally, make sure to monitor your pet for any behavioral changes or signs of distress in the following hours.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+<!-- Popup container -->
+<div id="popup11" class="popup-container" onclick="closePopup('popup11')">
+  <div class="popup-content">
+    <!-- Close button -->
+    <button class="absolute top-0 right-0 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">&times;</button>
+    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bleeding</h2>
+    <p class="leading-relaxed text-base">If your dog or cat is bleeding, immediate first aid is crucial. Begin by staying calm to avoid alarming your pet further. Gently restrain them, if necessary, and locate the source of the bleeding. Using a clean cloth or sterile bandage, apply gentle pressure to the wound. If the bleeding doesn't stop, try elevating the injured area, if possible. Do not use a tourniquet unless absolutely necessary, as it may cause more harm. Contact your veterinarian immediately for further guidance and transport your pet to the clinic promptly. Keep in mind that even if bleeding appears to have stopped, it's essential to seek professional veterinary care to address the underlying cause and ensure proper healing.</p>
+  </div>
+</div>
+
+<script>
+  // Function to display or hide popup based on its current state
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup.style.display === "block") {
+      closePopup(popupId);
+    } else {
+      showPopup(popupId);
+    }
+  }
+
+  // Function to display popup
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "block"; // Change 'hidden' to 'block' to show the popup
+  }
+
+  // Function to close popup
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = "none"; // Hide the popup
+  }
+
+  // Event listener function to close popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var popups = document.querySelectorAll('.popup-container');
+    popups.forEach(function(popup) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
